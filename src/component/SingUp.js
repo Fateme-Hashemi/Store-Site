@@ -22,7 +22,7 @@ const [touched, setTouched] = useState({});
 useEffect (()=>{
     setError(validate(data))
     console.log(error)
-},[data])
+},[data],[touched])
 
 
 
@@ -45,9 +45,15 @@ const focusHandler = event => {
 
 const submitHandler =event => {
     if(!Object.keys(error).length) {
-        console
+        console.log(error)
     }else {
-        setT
+        setTouched( {
+            name: true,
+            email:true,
+            password:true,
+            confirmpassword: true,
+            isAccepted: true
+        })
     }
 }
     return (
@@ -58,19 +64,19 @@ const submitHandler =event => {
             <h2>SignUp</h2>
             <label>Name</label>
             <input type='text' value={data.name} name='name' onChange={changeHandler} onFocus={focusHandler} />
-            {error.name && <span>{error.name}</span>}
+            {error.name && touched.name && <span>{error.name}</span>}
             <label>Email</label>
             <input type='text' value={data.email} name='email' onChange={changeHandler} onFocus={focusHandler} />
-            {error.email && <span>{error.email}</span>}
+            {error.email && touched.email && <span>{error.email}</span>}
             <label>Password</label>
             <input type='password' value={data.password} name='password' onChange={changeHandler} onFocus={focusHandler} />
-            {error.password && <span>{error.password}</span>}
+            {error.password && touched.password && <span>{error.password}</span>}
             <label>ConfirmPassword</label>
             <input type='password' value={data.confirmpassword} name='confirmpassword' onChange={changeHandler} onFocus={focusHandler} />
-            {error.confirmpassword && <span>{error.confirmpassword}</span>}
+            {error.confirmpassword && touched.confirmpassword && <span>{error.confirmpassword}</span>}
             <label>I accept a terms of privacy policy</label>
             <input type='checkbox' value={data.isAccepted} name='isAccepted' onChange={changeHandler} onFocus={focusHandler} />
-            {error.isAccepted && <span>{error.name}</span>}
+            {error.isAccepted && touched.isAccepted && <span>{error.name}</span>}
             <div>
                 <a href='#'>Login</a>
                 <button type='submit'>Sign Up</button>
