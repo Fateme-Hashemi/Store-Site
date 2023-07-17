@@ -1,7 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './SignUp.module.css';
-
+import { validate } from './validate';
 const SingUp = () => {
 
 const [data, setData] = useState({
@@ -11,6 +11,16 @@ const [data, setData] = useState({
     confirmpassword: "",
     isAccepted: false
 })
+
+const [error, setError] = useState({});
+
+useEffect (()=>{
+    setError(validate(data))
+    console.log(error)
+},[data])
+
+
+
 
 const changeHandler = (event) => {
     if(event.target.name === "isAccepted") {
