@@ -43,10 +43,13 @@ const focusHandler = event => {
 
 
 
-const submitHandler =event => {
+const submitHandler = event => {
+      
+  
     if(!Object.keys(error).length) {
-        console.log(error)
+        notify("You signed up successfully!", "success");
     }else {
+        notify("Invalid data", "error");
         setTouched( {
             name: true,
             email:true,
