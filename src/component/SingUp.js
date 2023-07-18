@@ -67,22 +67,22 @@ const submitHandler = event => {
             <h2 className={styles.header}>SignUp</h2>
              <div className={styles.item}>
                 <label>Name</label>
-            <input type='text' value={data.name} name='name' onChange={changeHandler} onFocus={focusHandler} />
+            <input type='text' value={data.name} name='name' onChange={changeHandler} onFocus={focusHandler} className={(error.name && touched.name) ? styles.uncompleted : styles.forminput } />
             {error.name && touched.name && <span>{error.name}</span>}
              </div>
             <div className={styles.item}>
                  <label>Email</label>
-            <input type='text' value={data.email} name='email' onChange={changeHandler} onFocus={focusHandler} />
+            <input type='text' value={data.email} name='email' onChange={changeHandler} onFocus={focusHandler} className={(error.email && touched.email) ? styles.uncompleted : styles.forminput } />
             {error.email && touched.email && <span>{error.email}</span>}
             </div>
             <div className={styles.item}>
                   <label>Password</label>
-            <input type='password' value={data.password} name='password' onChange={changeHandler} onFocus={focusHandler} />
+            <input type='password' value={data.password} name='password' onChange={changeHandler} onFocus={focusHandler} className={(error.password && touched.password) ? styles.uncompleted : styles.forminput } />
             {error.password && touched.password && <span>{error.password}</span>}
             </div>
             <div className={styles.item}>
                     <label>ConfirmPassword</label>
-            <input type='password' value={data.confirmpassword} name='confirmpassword' onChange={changeHandler} onFocus={focusHandler} />
+            <input type='password' value={data.confirmpassword} name='confirmpassword' onChange={changeHandler} onFocus={focusHandler} className={(error.confirmpassword && touched.confirmpassword) ? styles.uncompleted : styles.forminput } />
             {error.confirmpassword && touched.confirmpassword && <span>{error.confirmpassword}</span>}
             </div>
             <div className={styles.checkbox}>

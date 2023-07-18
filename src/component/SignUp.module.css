@@ -29,6 +29,10 @@
     flex-direction: column;
 
 }
+.item span {
+    color: rgb(201, 82, 82);
+    font-size: .8rem;
+}
 
 .item label {
     margin: 0 5px;
@@ -37,18 +41,31 @@
     color: rgb(64, 64, 206);
 }
 
-.item input {
+.forminput {
     width: 300px;
     height: 30px;
     outline: none;
     border: 1px solid gainsboro;
     border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.uncompleted {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgb(204, 115, 115);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
 }
 
 
-
-
-
+.forminput:focus,
+.uncompleted:focus {
+    outline: none;
+    line-height: 30px;
+    border: 1px solid rgb(64, 64, 206);
+}
 
 
 
@@ -56,12 +73,12 @@
 
 
 .checkbox {
-    text-align: left;
+    text-align:center;
     margin: 15px 0;
  
 }
 .checkbox label {
-    text-align: left;
+    text-align: center;
     margin: 0px 5px;
 }
 
