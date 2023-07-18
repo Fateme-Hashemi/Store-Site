@@ -61,28 +61,39 @@ const submitHandler = event => {
 }
     return (
 
-        <div>
+        <div className={styles.Container}>
 
-        <form onSubmit={submitHandler}>
-            <h2>SignUp</h2>
-            <label>Name</label>
+        <form onSubmit={submitHandler} className={styles.formContainer}>
+            <h2 className={styles.header}>SignUp</h2>
+             <div className={styles.item}>
+                <label>Name</label>
             <input type='text' value={data.name} name='name' onChange={changeHandler} onFocus={focusHandler} />
             {error.name && touched.name && <span>{error.name}</span>}
-            <label>Email</label>
+             </div>
+            <div className={styles.item}>
+                 <label>Email</label>
             <input type='text' value={data.email} name='email' onChange={changeHandler} onFocus={focusHandler} />
             {error.email && touched.email && <span>{error.email}</span>}
-            <label>Password</label>
+            </div>
+            <div className={styles.item}>
+                  <label>Password</label>
             <input type='password' value={data.password} name='password' onChange={changeHandler} onFocus={focusHandler} />
             {error.password && touched.password && <span>{error.password}</span>}
-            <label>ConfirmPassword</label>
+            </div>
+            <div className={styles.item}>
+                    <label>ConfirmPassword</label>
             <input type='password' value={data.confirmpassword} name='confirmpassword' onChange={changeHandler} onFocus={focusHandler} />
             {error.confirmpassword && touched.confirmpassword && <span>{error.confirmpassword}</span>}
-            <label>I accept a terms of privacy policy</label>
+            </div>
+            <div className={styles.checkbox}>
+                           <label>I accept a terms of privacy policy</label>
             <input type='checkbox' value={data.isAccepted} name='isAccepted' onChange={changeHandler} onFocus={focusHandler} />
             {error.isAccepted && touched.isAccepted && <span>{error.name}</span>}
-            <div>
-                <a href='#'>Login</a>
-                <button type='submit'>Sign Up</button>
+            </div>
+
+            <div className={styles}>
+                <a href='#' className={styles.loginbutton}>Login</a>
+                <button type='submit' className={styles.submitbutton}>Sign Up</button>
             </div>
 
         </form>

@@ -1,11 +1,90 @@
-form {
+.container {
     display: flex;
-    flex-direction: column;
-  
+    width: 300px;
+    height:900px;
+   justify-content: center;
+    align-items: center;
 }
 
-div {
-    width: 70%;
+.formContainer {
+    border: 1px solid gainsboro;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+}
+
+.header {
+    color: rgb(64, 64, 206);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.item {
+
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item label {
+    margin: 0 5px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: rgb(64, 64, 206);
+}
+
+.item input {
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.checkbox {
+    text-align: left;
+    margin: 15px 0;
+ 
+}
+.checkbox label {
+    text-align: left;
+    margin: 0px 5px;
+}
+
+.button {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+}
+
+.loginbutton {
+    text-decoration: none;
+    margin: 0 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+.submitbutton {
+    border: 1px solid gainsboro;
+    background-color: rgb(64, 64, 206);
+    color: white;
+    border-radius: 7px;
+    padding: 9px;
 }
