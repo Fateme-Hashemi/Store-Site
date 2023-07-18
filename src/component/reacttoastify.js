@@ -5,6 +5,6 @@ export const notify = (text, type) =>{
     if(type === "success") {
         toast.success(text);
     } else {
-        toast.error(text)
+        toast.error(text);
     }
 } 
