@@ -7,7 +7,6 @@
 .container {
     display: flex;
     width: 300px;
-    height:900px;
    justify-content: center;
     align-items: center;
 }
@@ -19,7 +18,8 @@
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 600px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .header {
@@ -44,7 +44,7 @@
     margin: 0 5px;
     font-size: 1.2rem;
     text-align: left;
-    color: rgb(64, 64, 206);
+    color: rgba(97, 97, 136, 0.753);
 }
 
 .forminput {
@@ -97,8 +97,7 @@
 
 .loginbutton {
     text-decoration: none;
-    margin: 0 30px;
-    color: black;
+    color: rgb(64, 64, 206);
     font-weight: bold;
     font-size: 1.2rem;
 
