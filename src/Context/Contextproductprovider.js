@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from 'react';
 import { getProducts } from '../service/api';
 
-const ProductContext = createContext(); // Initialize the context with an empty value
+export const ProductContext = createContext();
 
 const ContextProductProvider = (props) => {
   const [products, setProducts] = useState([]);
@@ -15,7 +15,7 @@ const ContextProductProvider = (props) => {
 
   return (
     <div>
-      {/* Use the 'ProductContext.Provider' with a capital 'P' */}
+
       <ProductContext.Provider value={products}>
         {props.children}
       </ProductContext.Provider>
