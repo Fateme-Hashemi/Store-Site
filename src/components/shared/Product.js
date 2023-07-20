@@ -7,7 +7,7 @@ const Product = ({productData}) => {
     return (
         <div>
             
-        <img src={productData.image} style={{width: "200px"}}/>
+        <img src={productData.image} style={{width: "200px"}} alt='product' />
         <h3>{shorten(productData.title)}</h3>
         <p>{productData.price}</p>
         <div>
