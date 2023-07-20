@@ -1,0 +1,21 @@
+import React from 'react';
+import {Route, Switch} from "react-router-dom";
+import SingUp from './SignUp';
+import Login from './Login';
+
+
+
+const Loginpage = () => {
+    return (
+        <div>
+        <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={SingUp} />
+        {/* <Route path="/loginpage" component={Loginpage} /> */}
+        <Redirect from="/" to="/signup" />
+        </Switch>
+        </div>
+    );
+};
+
+export default Loginpage;

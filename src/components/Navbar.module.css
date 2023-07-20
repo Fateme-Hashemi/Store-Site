@@ -1,0 +1,32 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(12, 13, 53);
+}
+
+.rightnav ul {
+    display: flex;
+}
+.rightnav li {
+    margin: 15px 15px;
+    list-style-type: none;
+    color: #fff;
+}
+
+.basketicon {
+    width: 30px;
+    margin: 10px 15px;
+}
+
+.leftnav {
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 5px;
+}

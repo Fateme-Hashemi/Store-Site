@@ -1,20 +1,19 @@
 import React from 'react';
-import SingUp from './component/SingUp';
-import Login from './component/Login';
 import { Route, Switch, Redirect } from 'react-router-dom/cjs/react-router-dom';
-
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import Login from './components/Login';
+import SingUp from './components/SignUp';
 
 
 const App = () => {
     return (
         <div>
+            <Navbar />
+            <Banner />
 
-        <Switch>
 
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={SingUp} />
-        <Redirect from="/" to="/signup" />
-        </Switch>
+   
 
 
         </div>
