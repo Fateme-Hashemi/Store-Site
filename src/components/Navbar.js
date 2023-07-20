@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Navbar.module.css';
 import basket from "../img/basket.png";
 import {Link} from "react-router-dom";
-
+import Loginpage from './Loginpage';
 
 const Navbar = () => {
     return (
@@ -11,7 +11,7 @@ const Navbar = () => {
 
         <div className={styles.leftnav}>
         <img src={basket} className={styles.basketicon} />
-       <a href='http://localhost:3000/loginpage' className={styles.login}  target='-blank'>Log in</a>
+       <Link to='<Loginpage />' className={styles.login}  target='-blank'>Log in</Link>
         </div>
 
         <div className={styles.rightnav}>

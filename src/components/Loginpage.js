@@ -11,9 +11,9 @@ const Loginpage = () => {
         <Switch>
         <Route path="/login" component={Login} />
         <Route path="/signup" component={SingUp} />
-        {/* <Route path="/loginpage" component={Loginpage} /> */}
-        <Redirect from="/" to="/signup" />
+        {/* <Redirect from="/" to="/signup" /> */}
         </Switch>
+      
         </div>
     );
 };
