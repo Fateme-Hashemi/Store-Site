@@ -11,7 +11,7 @@ const Navbar = () => {
 
         <div className={styles.leftnav}>
         <img src={basket} className={styles.basketicon} />
-       <Link to='<Loginpage />' className={styles.login}  target='-blank'>Log in</Link>
+       <Link to="#" className={styles.login}  target='-blank'>Log in</Link>
         </div>
 
         <div className={styles.rightnav}>
