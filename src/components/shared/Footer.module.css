@@ -1,0 +1,36 @@
+/* قرار دادن فوتر در پایین صفحه */
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+ 
+    bottom: 0;
+   
+  }
+  
+  /* لینک‌ها در فوتر */
+  .footerlinks a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footerlinks a:hover {
+    color: #007bff;
+  }
+  
+  /* اطلاعات کپی‌رایت در فوتر */
+  .footerinfo {
+    margin-top: 10px;
+  }
+  
+  /* فوتر بازدهی پاسخگو */
+  @media (max-width: 768px) {
+    .footer {
+      display: block;
+    }
+    .footer-links {
+      margin-bottom: 10px;
+    }
+  }
+  

@@ -35,7 +35,7 @@ const slideImages = [
 
 const Banner = () => {
     return (
-      <div className="slide-container">
+      <div className="slide-container" style={{marginTop: "50px"}}>
         <Slide>
          {slideImages.map((slideImage, index)=> (
             <div key={index}>

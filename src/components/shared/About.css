@@ -1,0 +1,20 @@
+.about-us {
+   
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+ 
+  }
+  
+  .about-us-title {
+    font-size: 2rem;
+    color: rgb(12, 13, 53);
+    margin-bottom: 20px;
+  }
+  
+  .about-us-text {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  

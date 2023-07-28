@@ -9,8 +9,8 @@ import SingUp from './components/SignUp';
 import CardContextProvider from './Context/CardContextProvider';
 import Navbar from './components/Navbar';
 import ShopCarts from './components/ShopCarts';
-
-
+import Footer from "./components/shared/Footer"
+import AboutUs from './components/shared/Aboutus';
 
 
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
         <Navbar />
             <Switch>
                 <Route path="/login" component={Login} />
+                <Route path="/about" component={AboutUs} />
                 <Route path="/shop" component={ShopCarts} />
                 <Route path="/signup" component={SingUp} />
                 <Route path="/products/:id" component={ProductDetails} />
@@ -31,6 +32,7 @@ const App = () => {
                 <Redirect  from="/products" to="/products/:id"  />
                 <Route path="/" component={HomePage} />
                 </Switch>
+                <Footer />
                 </CardContextProvider>
     </ProductContextProvider>
 
