@@ -6,10 +6,10 @@ import Store from './Store';
 const HomePage = () => {
     return (
         <div>
-                <Navbar />
+               
                 <Banner />
-                <ProductContextProvider>
-        <Store />
+      <ProductContextProvider>
+            <Store />
       </ProductContextProvider>
         </div>
     );
