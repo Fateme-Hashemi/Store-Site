@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Banner from './Banner';
-import ContextProductProvider from '../Context/Contextproductprovider';
+import ProductContextProvider from "../Context/ProductContextProvider";
 import Store from './Store';
 const HomePage = () => {
     return (
         <div>
                 <Navbar />
                 <Banner />
-                <ContextProductProvider>
+                <ProductContextProvider>
         <Store />
-      </ContextProductProvider>
+      </ProductContextProvider>
         </div>
     );
 };

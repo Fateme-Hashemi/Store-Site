@@ -3,7 +3,7 @@ import { getProducts } from '../service/api';
 
 export const ProductContext = createContext();
 
-const ContextProductProvider = (props) => {
+const ContextProductProvider = ({children}) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -17,10 +17,11 @@ const ContextProductProvider = (props) => {
     <div>
 
       <ProductContext.Provider value={products}>
-        {props.children}
+        {children}
       </ProductContext.Provider>
     </div>
   );
 };
 
-export default ContextProductProvider; // Make sure to export with capital 'P' as well
+export default ContextProductProvider; 
+
